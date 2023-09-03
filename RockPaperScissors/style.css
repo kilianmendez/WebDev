@@ -1,0 +1,52 @@
+body {
+    background-color: #6247AA;
+    color: #E2CFEA;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.player-choice {
+    width: 100px;
+    height: auto;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#stage{
+    display: flex;
+    align-items: center;
+    margin: 100px;
+    width: 60%;
+    height: 200px;
+    justify-content: space-around;
+    border: 5px solid #A06CD5;
+    border-radius: 10px;
+}
+
+#results{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: -100px;
+}
+
+#play{
+    font-family: 'Poppins', sans-serif;
+    color: #E2CFEA;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #6247AA;
+    border: 5px solid #A06CD5;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+#play:hover{
+    transform: scale(1.1);
+    background-color: #A06CD5;
+}

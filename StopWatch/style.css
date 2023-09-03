@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+    background-color: #F87666;
+    color: white;
+    font-family: 'Space Mono', monospace;
+}
+
+main{
+    margin-top: 30vh;
+    
+}
+
+#buttons button{
+    font-family: 'Space Mono', monospace;
+    background-color: #F87666;
+    color: white;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    width: 5rem;
+    height: 2rem;
+    margin: 2px;
+}
+
+#buttons button:hover{
+    background-color: #fc8e7f;
+    transform: scale(1.1);
+}

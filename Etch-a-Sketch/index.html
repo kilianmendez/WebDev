@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Space+Mono&display=swap" rel="stylesheet">
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Etch-a-Sketch</h1>
+    </header>
+    <main>
+        <div class="popup" id="popup">
+            <h2>Choose a Size for the Board:</h2>
+            <button id="16" class="popup-size-btn">16</button>
+            <button id="32" class="popup-size-btn">32</button>
+            <button id="64" class="popup-size-btn">64</button>
+            <button id="100" class="popup-size-btn">100</button>
+        </div>
+        <div id="control-panel"> 
+            <div id="main-btns">
+                <button id="size-btn">Change board size</button>
+                <div id="color-div">
+                    <p>Color</p>
+                    <input type="color" id="color-selector">
+                </div>
+            </div>
+            <button id="erase-btn">ERASE</button>
+        </div>
+        <div id="overlay"></div>
+        <div id="container"></div>
+    </main>
+    <footer>
+        <p>Coded by me</p>
+    </footer>
+</body>
+</html>

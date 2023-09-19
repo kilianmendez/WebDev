@@ -1,0 +1,165 @@
+body, html{
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+    background-color: rgb(32, 32, 59);
+    font-family: 'Space Mono', monospace;
+}
+
+header{
+    color: rgb(255, 230, 0);
+    background-color: rgb(24, 24, 24);
+    margin-top: 0;
+    text-align: center;
+    padding: 5px 0;
+}
+
+main{
+    min-height: 600px;
+    height: 80vh;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+#control-panel{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+#control-panel button{
+    margin: 10px;
+}
+
+#control-panel input{
+    margin: 7.5px ;
+    background-color: rgb(24, 24, 24);
+    border: none;
+    min-width: 3em;
+    height: 3em;
+}
+
+#color-div{
+    display: flex;
+    justify-content: center;
+    color: white;
+} 
+
+#erase-btn{
+    background-color: rgb(236, 70, 70);
+    font-weight: bold;
+    color: white;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    margin: 2rem auto;
+    background-color: white;
+    border: 5px solid rgb(24, 24, 24);
+    border-radius: 5px;
+}
+
+.box{
+    border: none;
+    box-sizing: border-box;
+}
+
+.box:hover{
+    background-color:#ccc;
+}
+
+.painted{
+    background-color: black;
+}
+
+#popup{
+    background-color: #ffffff;
+    box-sizing: border-box;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transition: 200ms ease-in-out;
+    transform: translate(-50%, -50%) scale(0);
+    border: 2px solid black;
+    padding: 10px;
+    z-index: 10;
+}
+
+#popup.active{
+    transition: 200ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+#overlay.active{
+    pointer-events: all;
+    opacity: 1;
+}
+
+button{
+    background-color: rgb(255, 230, 0);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+}
+
+.box.size16{
+    flex: 0 0 6.25%;
+}
+
+.box.size32{
+    flex: 0 0 3.125%;
+
+}
+
+.box.size64{
+    flex: 0 0 1.5625%;    
+}
+
+.box.size100{
+    flex: 0 0 1%;    
+}
+
+footer{
+    background-color: rgb(24, 24, 24);
+    color: white;
+    text-align: center;
+    height: 10vh;
+    padding: 5px 0;
+}
+
+/*Media Queries*/
+
+@media (max-width: 650px) {
+    /* Estilos para pantallas de 600px o más */
+    main{
+        flex-direction: column;
+    }
+
+    #container{
+        flex-wrap: wrap;
+        min-height: 400px;
+        
+    }
+}

@@ -5,28 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
+    <h1>Rock Paper Scissors</h1>
     <main>
-        <h1>Rock Paper Scissors</h1>
         <div id="stage">
-            <div>
-                <img src="./icons/signo-de-interrogacion.png" alt="player1" class="player-choice" id="player1">
-                <p id="points-p1">Player 1: 0</p>
+            <div id="player" class="box">
+                <p id="choice-player" class="weapon-icon">❓</p>
+                <p id="points-player">Player: 0</p>
             </div>
-            <p>vs</p>
-            <div>
-                <img src="./icons/signo-de-interrogacion.png" alt="player2" class="player-choice" id="player2">
-                <p id="points-p2">Player 2: 0</p>
-            </div> 
+            <div id="computer" class="box">
+                <p id="choice-computer" class="weapon-icon">❓</p>
+                <p id="points-computer">Computer: 0</p>
+            </div>
+        </div>
+        <p id="round-winner-txt"></p>
+        <div id="weapons">
+            <button id="rock-btn" class="weapon-btn">✊</button>
+            <button id="paper-btn" class="weapon-btn">🖐️</button>
+            <button id="scissors-btn" class="weapon-btn">✌️</button>
         </div>
         <div id="control-panel">
-            <button id="play" onclick="play()">PLAY</button>
+            <!--<button id="play-btn" class="control-btn">PLAY</button>-->
+            <button id="reset-btn" class="control-btn">RESET</button>
         </div>
     </main>
-    <script src="./script.js"></script>
+    <script src="./logic.js" ></script>
 </body>
 </html>

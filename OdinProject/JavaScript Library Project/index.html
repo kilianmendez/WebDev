@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Library</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script-library.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My JS Library</h1>
+        </header>
+        <div id="sidebar">
+            <form>
+                <label for="book-title">Title</label>
+                <input type="text" name="book-title" id="book-title">
+                <label for="book-author">Author</label>
+                <input type="text" name="book-author" id="book-author">
+                <label for="book-pages">Number of pages</label>
+                <input type="text" name="book-pages" id="book-pages">
+                <div id="checkbox-area">
+                    <label for="is-read">I have read this book.</label>
+                    <input type="checkbox" name="read" id="is-read">
+                </div>
+                <button onclick="addBook()" id="add-btn">ADD BOOK</button>
+            </form>
+        </div>
+        <main id="book-shelf">
+            <div id="info">
+                <p>Books read: <span id="books-read">0</span></p>
+                <p>Books unread: <span id="books-unread">0</span></p>
+                <p>Total books: <span id="total-books">0</span></p>
+                <button id="delete-btn">DELETE ALL</button>
+            </div>
+            <ul id="books-section">
+                <li id="legend">
+                    <div>
+                        <p>Title</p>
+                        <p>Author</p>
+                        <p>Pages</p>
+                        <p>Read?</p>
+                        <div></div>
+                    </div>
+                </li>
+            </ul>
+        </main>
+    </div>
+</body>
+</html>
